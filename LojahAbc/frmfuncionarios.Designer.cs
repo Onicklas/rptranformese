@@ -60,8 +60,8 @@ namespace LojahAbc
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblUF = new System.Windows.Forms.Label();
             this.cbbUF = new System.Windows.Forms.ComboBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.lblBairro = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.lblCidade = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
@@ -377,8 +377,8 @@ namespace LojahAbc
             this.gpbEndereco.Controls.Add(this.pictureBox2);
             this.gpbEndereco.Controls.Add(this.lblUF);
             this.gpbEndereco.Controls.Add(this.cbbUF);
-            this.gpbEndereco.Controls.Add(this.txtEstado);
-            this.gpbEndereco.Controls.Add(this.lblEstado);
+            this.gpbEndereco.Controls.Add(this.txtBairro);
+            this.gpbEndereco.Controls.Add(this.lblBairro);
             this.gpbEndereco.Controls.Add(this.txtCidade);
             this.gpbEndereco.Controls.Add(this.lblCidade);
             this.gpbEndereco.Controls.Add(this.txtComplemento);
@@ -453,22 +453,22 @@ namespace LojahAbc
             this.cbbUF.Size = new System.Drawing.Size(84, 28);
             this.cbbUF.TabIndex = 18;
             // 
-            // txtEstado
+            // txtBairro
             // 
-            this.txtEstado.Location = new System.Drawing.Point(218, 67);
-            this.txtEstado.MaxLength = 10;
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(124, 26);
-            this.txtEstado.TabIndex = 15;
+            this.txtBairro.Location = new System.Drawing.Point(218, 67);
+            this.txtBairro.MaxLength = 10;
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(124, 26);
+            this.txtBairro.TabIndex = 15;
             // 
-            // lblEstado
+            // lblBairro
             // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(152, 70);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(64, 20);
-            this.lblEstado.TabIndex = 24;
-            this.lblEstado.Text = "Estado:";
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Location = new System.Drawing.Point(152, 70);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(55, 20);
+            this.lblBairro.TabIndex = 24;
+            this.lblBairro.Text = "Bairro:";
             // 
             // txtCidade
             // 
@@ -530,6 +530,7 @@ namespace LojahAbc
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(84, 26);
             this.mskCEP.TabIndex = 14;
+            this.mskCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCEP_KeyDown);
             // 
             // lblCEP
             // 
@@ -618,8 +619,8 @@ namespace LojahAbc
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.Label lblUF;
         private System.Windows.Forms.ComboBox cbbUF;
         private System.Windows.Forms.Button btnPesquisar;
